@@ -1,0 +1,25 @@
+.wrap2 {
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+  .content {
+    width: 60px;
+    height: 60px;
+    background-color: rebeccapurple;
+    &.className {
+      background-color: yellowgreen;
+      height: 80px;
+    }
+  }
+}
+
+.wrap1 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  .price {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}

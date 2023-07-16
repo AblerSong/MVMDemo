@@ -88,3 +88,87 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+node/out/*.js
+*/*/Pods
+*/*/*/Pods
+*/Pods
+*/node_modules
+**/img
+*/img
+*.lock
+.DS_Store
+## Build generated
+
+build/
+
+DerivedData
+
+.DS_Store
+node_modules
+/dist
+*/**/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+
+## Various settings
+
+*.pbxuser
+
+!default.pbxuser
+
+*.mode1v3
+
+!default.mode1v3
+
+*.mode2v3
+
+!default.mode2v3
+
+*.perspectivev3
+
+!default.perspectivev3
+
+xcuserdata
+
+
+
+## Other
+
+*.xccheckout
+
+*.moved-aside
+
+*.xcuserstate
+
+*.xcscmblueprint
+
+*.xcscheme
+
+*.xcworkspace
+
+!default.xcworkspace
+
+DerivedData
+
+.idea

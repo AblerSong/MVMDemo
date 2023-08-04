@@ -18,7 +18,6 @@ import Stretch from "./components/Stretch"
 export default {
   created() {
     this.$store.dispatch("initAdvancedMediator")
-    import("./css/style.scss")
   },
   components: {
     Radio,
@@ -40,3 +39,7 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+// write css only in page
+@import "./css/style.scss";
+</style>

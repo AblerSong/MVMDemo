@@ -11,6 +11,26 @@ MVM设计模式 for iOS, Android, H5; 大前端的POM设计模式
 ##### 一、MVM简介
 **本质上就是一个后端和UI的中间件, 向后端请求接口之后对数据解析, 输出一个UI需要的且可以直接使用的数据模型(包含`data`和`function`),前端直接渲染, UI开发无需关注逻辑,逻辑开发者无需关注UI;**
 
+比如一个button,有登录文字和点击事件, 下面是伪代码
+
+```
+class BtnModel {
+    let text = "登录"
+    function clickFunc(){
+    // 点击登录
+    }
+}
+
+let btn = Button()
+let model = BtnModel()
+
+btn.text <--> model.text//这里进行绑定
+btn.click = function() {
+   model.clickFunc()
+}
+// UI开发拿到数据可以直接绑定界面需要显示的文字, 点击事件, 逻辑开发者只需关注逻辑无需关注UI
+```
+
 [demo](https://github.com/AblerSong/MVMDemo)中的`  start ` 入门版代码简单易懂,初级开发也能快速上手;具体实现请点击https://github.com/AblerSong/MVMDemo
 
 

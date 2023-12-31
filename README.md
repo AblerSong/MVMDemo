@@ -10,6 +10,27 @@ The design was originally conceptualized following the principles of MVM (Mediat
 ### I. Introduction to MVM
 **At its core, it functions as an intermediary between the backend and the UI. It sends requests to the backend for interface data, parses the data, and produces a data model suitable for the UI's requirements, encompassing both `data` and `function` components. The frontend then directly renders this model, freeing UI developers from the need to address the underlying logic. Simultaneously, logic developers are liberated from focusing on UI concerns.**
 
+button, button text and button click function, eg.
+
+```
+class BtnModel {
+    let text = "login"
+    function clickFunc(){
+    // click login...
+    }
+}
+
+let btn = Button()
+let model = BtnModel()
+
+btn.text <--> model.text // bind
+btn.click = function() {
+   model.clickFunc()
+}
+// UI developers can directly use the data obtained, while logic developers only need to focus on logic without concerning themselves with UI.
+```
+
+
 ` start ` in [demo](https://github.com/AblerSong/MVMDemo), simple code, beginner developers can easily understand
 implementation:https://github.com/AblerSong/MVMDemo
 

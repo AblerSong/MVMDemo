@@ -3,13 +3,12 @@ import { BehaviorSubject, combineLatest } from "rxjs"
 import store from "@/store"
 
 export class AdvancedMediator {
-  radioModel = null
-  checkboxModel = null
-  provinceModel = null
-  calculatorModel = null
-  submitModel = null
-
   constructor() {
+    this.radioModel = null
+    this.checkboxModel = null
+    this.provinceModel = null
+    this.calculatorModel = null
+    this.submitModel = null
     this.initModel()
   }
   initModel() {
